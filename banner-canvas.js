@@ -437,13 +437,22 @@ function initRightHexagonCanvas() {
 }
 
 function initLeftHexagonCanvas() {
-    leftHexagonCanvas.addHexagons(35, 35, 35, "#FFD460", [1, 1, 2, 3, 1, 2, 1, 2, 2, 1, 3, 3, 2, 3, 2, 1, 1, 2, 1, 2, 3, 3, 2, 1])
+    leftHexagonCanvas.addHexagons(35, 35, 35, "#FFD460", [1, 1, 2, 3, 1, 2, 1, 2, 2, 3, 2, 2, 1, 1, 2, 4, 2, 3, 3, 2, 3, 2, 1, 1, 2])
     leftHexagonCanvas.addHexagons(x = 192.50000000000006,
         y = 247.1762239271875,
         radius = 35,
         color = "#FFD460",
         edgeNumbers = [5, 5, 5, 1, 2],
         drawRadius = 27);
+
+    leftHexagonCanvas.addHexagons(
+        x = 140.0000000000003,
+        y = 823.0831174438391,
+        radius = 35,
+        color = "#FFD460",
+        edgeNumbers = [6, 6, 2, 3, 3, 3],
+        drawRadius = 27);
+
 
     leftHexagonCanvas.addOutlinePoint(0, 0);
     leftHexagonCanvas.addOutline(0, 4)
@@ -466,39 +475,39 @@ function initLeftHexagonCanvas() {
         .addOutline(8, 3)
         .addOutline(8, 2)
         .addOutline(9, 3)
-        .addOutline(9, 2)
-        .addOutline(11, 4)
+        .addOutline(10, 4)
+        .addOutline(10, 3)
+        .addOutline(10, 2)
         .addOutline(11, 3)
-        .addOutline(12, 4)
+        .addOutline(11, 2)
         .addOutline(12, 3)
         .addOutline(12, 2)
         .addOutline(13, 3)
-        .addOutline(14, 4)
-        .addOutline(14, 3)
-        .addOutline(14, 2)
-        .addOutline(15, 3)
-        .addOutline(15, 2)
+        .addOutline(13, 2)
         .addOutline(16, 3)
         .addOutline(16, 2)
         .addOutline(17, 3)
-        .addOutline(17, 2)
+        .addOutline(18, 4)
         .addOutline(18, 3)
-        .addOutline(18, 2)
+        .addOutline(19, 4)
         .addOutline(19, 3)
         .addOutline(19, 2)
         .addOutline(20, 3)
         .addOutline(21, 4)
         .addOutline(21, 3)
-        .addOutline(22, 4)
+        .addOutline(21, 2)
         .addOutline(22, 3)
         .addOutline(22, 2)
         .addOutline(23, 3)
         .addOutline(23, 2)
         .addOutline(24, 3)
         .addOutline(24, 2)
+        .addOutline(25, 3)
+        .addOutline(25, 2)
 
     var lastY = leftHexagonCanvas.outline[leftHexagonCanvas.outline.length - 1].y;
     leftHexagonCanvas.addOutlinePoint(0, lastY)
+    console.log(leftHexagonCanvas);
     refreshLeftCanvas()
 
 }
