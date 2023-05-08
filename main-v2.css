@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #2d4059;
+  --primary-color-variant: #5a7497;
+  --on-primary: #fff;
+  --secondary-color: #ffd460;
+  --secondary-color-variant: #fdb42f;
+  --on-secondary: #000;
+  --background: #e5e5e5;
+  --on-background: #1a2c41;
+  --surface: #fff;
+  --on-surface: #1a2c41;
+}
+body {
+  margin: -8px;
+}
+
+.header-section {
+  background: radial-gradient(
+    var(--primary-color-variant),
+    var(--primary-color)
+  );
+  height: 80vh;
+  position: relative;
+}
+
+#canvas-right {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10vw;
+}
+
+#canvas-left {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10vw;
+}
+
+.right-filler {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 10vw;
+  background-color: var(--secondary-color);
+}
+
+.left-filler {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10vw;
+  background-color: var(--secondary-color);
+}
+
+.header-logo {
+  width: min(50vw, 500px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1400px) {
+  #canvas-right {
+    right: 0;
+  }
+
+  #canvas-left {
+    left: 0;
+  }
+
+  .right-filler,
+  .left-filler {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .header-section {
+    background-color: cadetblue;
+    aspect-ratio: 1;
+    height: auto;
+  }
+
+  #canvas-right {
+    visibility: hidden;
+  }
+
+  #canvas-left {
+    visibility: hidden;
+  }
+
+  /* .header-overlay-canvas {
+    height: 80vh;
+    aspect-ratio: 1;
+    height: auto;
+  } */
+}

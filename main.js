@@ -263,7 +263,7 @@ class Hexagon {
       drawnRadius =
         minRadius +
         ((this.distanceFromMouse - minDistance) * (maxRadius - minRadius)) /
-          (maxDistance - minDistance);
+        (maxDistance - minDistance);
       drawnRadius = Math.min(maxRadius, Math.max(minRadius, drawnRadius));
     }
     let path = this._getPathFor(drawnRadius);
@@ -450,7 +450,6 @@ function init() {
 }
 
 function refreshCanvas() {
-  var img = document.getElementById("founder-img-1");
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   //ctx.drawImage(img, 0, 0);
   hexagons.forEach((hexagon) => {
