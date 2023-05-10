@@ -3,6 +3,7 @@
   --primary-color-variant: #5a7497;
   --primary-color-63: #2d4059a1;
   --on-primary: #fff;
+  --on-primary-63: #ffffffa1;
   --secondary-color: #ffd460;
   --secondary-color-variant: #fdb42f;
   --on-secondary: #000;
@@ -214,13 +215,13 @@ body {
 
 .porfolio-back {
   background: var(--primary-color-63);
-  padding: 1.5vw;
+  padding: min(30px, 1.5vw);
   border-radius: 50%;
   position: absolute;
   width: 25px;
   height: 25px;
-  top: 4.3vh;
-  left: 3.65vw;
+  top: min(56px, 4.3vh);
+  left: min(73px, 3.65vw);
 }
 
 .porfolio-back:hover {
@@ -233,6 +234,22 @@ body {
   position: relative;
   padding-top: 6px;
   color: var(--on-primary);
+}
+@media screen and (min-width: 2000px) {
+  .porfolio-card {
+    width: 1600px;
+    height: 800px;
+  }
+
+  .mock-container {
+    width: 592.05px;
+    height: 800px;
+  }
+
+  .project-detail {
+    width: 986.75px;
+    height: 800px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -253,11 +270,89 @@ body {
 @media screen and (max-width: 1000px) {
   #project-mandat {
     font-size: 1.1em;
-    color: red;
   }
   #project-title {
     font-size: 2em;
-    color: red;
+  }
+  .section-porfolio {
+    height: 110vh;
+  }
+
+  .porfolio-card {
+    position: absolute;
+    background-color: unset;
+    padding: 8px 0px 0px 0px;
+    width: unset;
+    border-radius: unset;
+    display: unset;
+    gap: unset;
+    left: unset;
+    top: unset;
+    transform: unset;
+    box-shadow: unset;
+  }
+  .mock-container {
+    width: 70vw;
+    height: 140vw;
+    left: 17%;
+  }
+
+  .mock-container img {
+    height: 100%;
+    object-fit: scale-down;
+    position: absolute;
+    z-index: 1;
+    left: unset;
+    width: 100%;
+  }
+
+  .col-1 {
+    left: 11%;
+  }
+  .col-2 {
+    left: 27%;
+  }
+  .col-3 {
+    left: 43.5%;
+  }
+  .col-4 {
+    left: 60.25%;
+  }
+  .col-5 {
+    left: 76%;
+  }
+
+  .app-icon {
+    width: 12%;
+    height: 12%;
+  }
+
+  .porfolio-back {
+    background: var(--on-primary);
+    padding: 1.5vw;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 8.5vh;
+    left: 11.65vw;
+  }
+
+  .porfolio-back:hover {
+    background: var(--on-primary-63);
+    transform: translate(-5px, 0);
+  }
+
+  .porfolio-back-icon {
+    padding-top: 19px;
+    color: var(--primary-color-variant);
+    padding-left: 6px;
+  }
+  .project-detail {
+    width: 92vw;
+    background-color: var(--surface);
+    padding: 8px 19px;
+    margin-top: 8px;
   }
 }
 
@@ -288,11 +383,8 @@ body {
   }
 }
 
-@media screen and (max-width:550px) {
-
+@media screen and (max-width: 550px) {
   .section-mission {
     height: 65vh;
   }
-}
-  
 }
