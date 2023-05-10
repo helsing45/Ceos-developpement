@@ -507,13 +507,11 @@ function initLeftHexagonCanvas() {
 
     var lastY = leftHexagonCanvas.outline[leftHexagonCanvas.outline.length - 1].y;
     leftHexagonCanvas.addOutlinePoint(0, lastY)
-    console.log(leftHexagonCanvas);
     refreshLeftCanvas()
 
 }
 
 function refreshRightCanvas() {
-    console.log("Refresh  right canvas");
     rightCanvas.height = banner.offsetHeight;
     rightCtx.clearRect(0, 0, rightCanvas.width, rightCanvas.height);
     rightHexagonCanvas.hexagons.forEach((hexagon) => {
@@ -529,7 +527,6 @@ function refreshRightCanvas() {
 }
 
 function refreshLeftCanvas() {
-    console.log("Refresh canvas");
     leftCanvas.height = banner.offsetHeight;
     leftCtx.clearRect(0, 0, leftCanvas.width, leftCanvas.height);
     leftHexagonCanvas.hexagons.forEach((hexagon) => {

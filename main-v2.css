@@ -1,6 +1,7 @@
 :root {
   --primary-color: #2d4059;
   --primary-color-variant: #5a7497;
+  --primary-color-63: #2d4059a1;
   --on-primary: #fff;
   --secondary-color: #ffd460;
   --secondary-color-variant: #fdb42f;
@@ -63,7 +64,7 @@ body {
 /* MISSION SECTION */
 
 .section-mission {
-  height: 55vh;
+  height: 35vh;
   width: 100%;
   background-color: var(--secondary-color);
 }
@@ -105,6 +106,135 @@ body {
   border-radius: 50%;
 }
 
+/* PORFOLIO SECTION */
+.section-porfolio {
+  height: 90vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.porfolio-card {
+  position: absolute;
+  background-color: var(--surface);
+  padding: 18px;
+  width: 80vw;
+  border-radius: 7px;
+  display: flex;
+  gap: 22px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.mock-container {
+  width: 30vw;
+  height: 40vw;
+  position: relative;
+}
+
+.mock-container img {
+  height: 100%;
+  object-fit: scale-down;
+  position: absolute;
+  z-index: 1;
+  left: 17%;
+}
+.app-icon {
+  background: #ff000075;
+  width: 9%;
+  height: 12%;
+  position: absolute;
+  z-index: 2;
+}
+
+.project-detail {
+  width: 50vw;
+}
+
+.project-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 5px 5px 0px 19px;
+}
+
+.project-tag {
+  background-color: var(--primary-color-variant);
+  padding: 5px 15px;
+  font-size: 1.2em;
+  border-left: var(--primary-color) solid 6px;
+  color: var(--on-primary);
+  border-radius: 0px 2px 2px 0px;
+}
+
+#project-mandat {
+  font-size: 1.25em;
+  color: var(--on-surface);
+}
+#project-title {
+  font-size: 3em;
+  color: var(--on-surface);
+}
+
+.row-1 {
+  top: 11%;
+}
+
+.row-2 {
+  top: 24%;
+}
+
+.col-1 {
+  left: 23.5%;
+}
+
+.col-2 {
+  left: 34.5%;
+}
+
+.col-3 {
+  left: 45.5%;
+}
+
+.col-4 {
+  left: 56.5%;
+}
+
+.col-5 {
+  left: 67.5%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.porfolio-back {
+  background: var(--primary-color-63);
+  padding: 1.5vw;
+  border-radius: 50%;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 4.3vh;
+  left: 3.65vw;
+}
+
+.porfolio-back:hover {
+  background: var(--primary-color);
+  transform: translate(-5px, 0);
+}
+
+.porfolio-back-icon {
+  font-weight: 900;
+  position: relative;
+  padding-top: 6px;
+  color: var(--on-primary);
+}
+
 @media screen and (max-width: 1400px) {
   #canvas-right {
     right: 0;
@@ -117,6 +247,17 @@ body {
   .right-filler,
   .left-filler {
     visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #project-mandat {
+    font-size: 1.1em;
+    color: red;
+  }
+  #project-title {
+    font-size: 2em;
+    color: red;
   }
 }
 
@@ -145,4 +286,13 @@ body {
     top: 40vh;
     width: 85%;
   }
+}
+
+@media screen and (max-width:550px) {
+
+  .section-mission {
+    height: 65vh;
+  }
+}
+  
 }
