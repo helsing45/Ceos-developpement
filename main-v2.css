@@ -145,6 +145,7 @@ body {
   left: 17%;
 }
 .app-icon {
+  cursor: pointer;
   background: #ff000075;
   width: 9%;
   height: 12%;
@@ -181,12 +182,47 @@ body {
   color: var(--on-surface);
 }
 
+.app-action {
+  cursor: pointer;
+  background: #ff000075;
+  position: absolute;
+  z-index: 2;
+}
+.app-action.message {
+  width: 59%;
+  height: 12.4%;
+  left: 20.5%;
+}
+.app-action.message.row-1 {
+  top: 32.75%;
+}
+.app-action.message.row-2 {
+  top: 45.2%;
+}
+.app-action.message.row-3 {
+  top: 57.7%;
+}
+.app-action.message.row-4 {
+  top: 70.2%;
+}
+
+.back {
+  cursor: pointer;
+  background: #ff000075;
+  position: absolute;
+  z-index: 2;
+  width: 10%;
+  height: 8%;
+  left: 19.5%;
+  top: 5%;
+}
+
 .row-1 {
   top: 11%;
 }
 
-.row-2 {
-  top: 24%;
+.row-last {
+  top: 76%;
 }
 
 .col-1 {
@@ -235,6 +271,7 @@ body {
   padding-top: 6px;
   color: var(--on-primary);
 }
+
 @media screen and (min-width: 2000px) {
   .porfolio-card {
     width: 1600px;
@@ -276,6 +313,15 @@ body {
   }
   .section-porfolio {
     height: 110vh;
+  }
+  .app-action.message {
+    width: 88%;
+    height: 12.4%;
+    left: 5.5%;
+  }
+
+  .back {
+    left: 5.5%;
   }
 
   .porfolio-card {
