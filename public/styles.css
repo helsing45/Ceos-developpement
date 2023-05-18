@@ -1,0 +1,558 @@
+:root {
+  --primary-color: #2d4059;
+  --primary-color-variant: #5a7497;
+  --primary-color-63: #2d4059a1;
+  --on-primary: #fff;
+  --on-primary-63: #ffffffa1;
+  --secondary-color: #ffd460;
+  --secondary-color-30: #ffd4604d;
+  --secondary-color-variant: #fdb42f;
+  --on-secondary: #000;
+  --background: #e5e5e5;
+  --on-background: #1a2c41;
+  --surface: #fff;
+  --on-surface: #1a2c41;
+  --surface-overlay: #ffffff75;
+  --error: #f00;
+  --on-error: #fff;
+}
+body {
+  margin: -8px;
+  font-family: "Didact Gothic", sans-serif;
+  background-color: var(--background);
+}
+
+.header-section {
+  background: radial-gradient(
+    var(--primary-color-variant),
+    var(--primary-color)
+  );
+  height: 80vh;
+  position: relative;
+}
+
+#canvas-right {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10vw;
+}
+
+#canvas-left {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10vw;
+}
+
+.right-filler {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 10vw;
+  background-color: var(--secondary-color);
+}
+
+.left-filler {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10vw;
+  background-color: var(--secondary-color);
+}
+
+/* MISSION SECTION */
+
+.section-mission {
+  height: 35vh;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+.header-logo {
+  width: min(50vw, 500px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mission-card {
+  position: absolute;
+  background-color: var(--surface);
+  padding: 18px;
+  width: 60vw;
+  border-radius: 7px;
+  display: flex;
+  gap: 22px;
+  left: 50%;
+  top: 77vh;
+  transform: translate(-50%, 0);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.mission-card h1 {
+  color: var(--on-surface);
+}
+
+.mission-card img {
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  background-color: var(--primary-color);
+  display: block;
+  border-radius: 50%;
+}
+
+/* PORFOLIO SECTION */
+.section-porfolio {
+  height: 90vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.porfolio-card {
+  position: absolute;
+  background-color: var(--surface);
+  padding: 18px;
+  width: 80vw;
+  border-radius: 7px;
+  display: flex;
+  gap: 22px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.mock-container {
+  width: 30vw;
+  height: 40vw;
+  position: relative;
+}
+
+.mock-container img {
+  height: 100%;
+  object-fit: scale-down;
+  position: absolute;
+  z-index: 1;
+  left: 17%;
+}
+.app-icon {
+  cursor: pointer;
+  width: 9%;
+  height: 12%;
+  position: absolute;
+  z-index: 2;
+}
+
+.project-detail {
+  width: 50vw;
+}
+
+.project-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 5px 5px 0px 19px;
+}
+
+.project-tag {
+  background-color: var(--primary-color-variant);
+  padding: 5px 15px;
+  font-size: 1.2em;
+  border-left: var(--primary-color) solid 6px;
+  color: var(--on-primary);
+  border-radius: 0px 2px 2px 0px;
+}
+
+#project-mandat {
+  font-size: 1.25em;
+  color: var(--on-surface);
+}
+#project-title {
+  font-size: 3em;
+  color: var(--on-surface);
+}
+
+.app-action {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+.app-action.message {
+  width: 59%;
+  height: 12.4%;
+  left: 20.5%;
+}
+.app-action.message.row-1 {
+  top: 32.75%;
+}
+.app-action.message.row-2 {
+  top: 45.2%;
+}
+.app-action.message.row-3 {
+  top: 57.7%;
+}
+.app-action.message.row-4 {
+  top: 70.2%;
+}
+
+.back {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  width: 10%;
+  height: 8%;
+  left: 19.5%;
+  top: 5%;
+}
+
+.row-1 {
+  top: 11%;
+}
+
+.row-last {
+  top: 76%;
+}
+
+.col-1 {
+  left: 23.5%;
+}
+
+.col-2 {
+  left: 34.5%;
+}
+
+.col-3 {
+  left: 45.5%;
+}
+
+.col-4 {
+  left: 56.5%;
+}
+
+.col-5 {
+  left: 67.5%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.porfolio-back {
+  background: var(--primary-color-63);
+  padding: min(30px, 1.5vw);
+  border-radius: 50%;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: min(56px, 4.3vh);
+  left: min(73px, 3.65vw);
+}
+
+.porfolio-back:hover {
+  background: var(--primary-color);
+  transform: translate(-5px, 0);
+}
+
+.porfolio-back-icon {
+  font-weight: 900;
+  position: relative;
+  padding-top: 6px;
+  color: var(--on-primary);
+}
+
+.contact-us-section {
+  height: 80vh;
+  background: var(--secondary-color);
+  display: flex;
+  position: relative;
+}
+
+.contact-us-section img {
+  height: 100%;
+  width: 44vw;
+  object-fit: cover;
+}
+.contact-us-form {
+  width: 100%;
+  display: block;
+  display: flex;
+}
+.formcarry-form {
+  background: var(--surface);
+  padding: 30px;
+  margin: auto;
+  width: min(100%, 850px);
+  border-radius: 8px;
+}
+.formcarry-container {
+  width: var(50%);
+  max-width: var(500px);
+  display: block;
+  margin: 10vh auto 0 auto;
+}
+
+.formcarry-form label {
+  display: block;
+  padding: 12px 0 2px 0;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.formcarry-form input,
+.formcarry-form textarea {
+  font-size: 16px;
+  display: block;
+  width: 96%;
+  padding: 10px;
+  background-color: var(--surface);
+  border: none;
+  border: 4px solid var(--primary-color);
+  outline: none;
+  border-radius: 8px;
+  color: var(--primary-color-variant);
+}
+
+.formcarry-form input:focus,
+.formcarry-form textarea:focus {
+  background-color: var(--surface);
+  color: var(--on-surface);
+}
+
+.formcarry-form input:focus:required:invalid {
+  border-color: var(--error);
+  background-color: #fff;
+}
+
+.formcarry-form button {
+  display: block;
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border-color: transparent;
+  background-color: var(--primary-color);
+  color: var(--on-primary);
+  font-weight: 700;
+  font-size: 18px;
+
+  transition: 300ms all;
+}
+
+.formcarry-form button:hover {
+  background-color: var(--primary-color-63);
+}
+
+.formcarry-alert {
+  padding: 12px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 12px;
+  display: none;
+}
+
+.formcarry-alert.visible {
+  display: block;
+}
+
+.formcarry-alert.success {
+  background: #69cf9d;
+}
+
+.formcarry-alert.error {
+  background: #de524c;
+}
+
+@media screen and (min-width: 2000px) {
+  .porfolio-card {
+    width: 1600px;
+    height: 800px;
+  }
+
+  .mock-container {
+    width: 592.05px;
+    height: 800px;
+  }
+
+  .project-detail {
+    width: 986.75px;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #canvas-right {
+    right: 0;
+  }
+
+  #canvas-left {
+    left: 0;
+  }
+
+  .right-filler,
+  .left-filler {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #project-mandat {
+    font-size: 1.1em;
+  }
+  #project-title {
+    font-size: 2em;
+  }
+  .section-porfolio {
+    height: 140vh;
+  }
+  .app-action.message {
+    width: 88%;
+    height: 12.4%;
+    left: 5.5%;
+  }
+
+  .back {
+    left: 5.5%;
+  }
+
+  .porfolio-card {
+    position: absolute;
+    background-color: unset;
+    padding: 8px 0px 0px 0px;
+    width: unset;
+    border-radius: unset;
+    display: unset;
+    gap: unset;
+    left: unset;
+    top: unset;
+    transform: unset;
+    box-shadow: unset;
+  }
+  .mock-container {
+    width: 70vw;
+    height: 140vw;
+    left: 17%;
+  }
+
+  .mock-container img {
+    height: 100%;
+    object-fit: scale-down;
+    position: absolute;
+    z-index: 1;
+    left: unset;
+    width: 100%;
+  }
+
+  .col-1 {
+    left: 11%;
+  }
+  .col-2 {
+    left: 27%;
+  }
+  .col-3 {
+    left: 43.5%;
+  }
+  .col-4 {
+    left: 60.25%;
+  }
+  .col-5 {
+    left: 76%;
+  }
+
+  .app-icon {
+    width: 12%;
+    height: 12%;
+  }
+
+  .porfolio-back {
+    background: var(--on-primary);
+    padding: 1.5vw;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 8.5vh;
+    left: 11.65vw;
+  }
+
+  .porfolio-back:hover {
+    background: var(--on-primary-63);
+    transform: translate(-5px, 0);
+  }
+
+  .porfolio-back-icon {
+    padding-top: 19px;
+    color: var(--primary-color-variant);
+    padding-left: 6px;
+  }
+  .project-detail {
+    width: 92vw;
+    background-color: var(--surface);
+    padding: 8px 19px;
+    margin-top: 8px;
+  }
+
+  .contact-us-section img {
+    width: 100%;
+  }
+
+  .contact-us-form {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    background: var(--secondary-color-30);
+  }
+  .formcarry-form {
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .header-section {
+    background-color: cadetblue;
+    aspect-ratio: 1;
+    height: auto;
+  }
+
+  #canvas-right {
+    visibility: hidden;
+  }
+
+  #canvas-left {
+    visibility: hidden;
+  }
+
+  .mission-card {
+    position: absolute;
+    background-color: var(--surface);
+    padding: 18px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    top: 40vh;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section-mission {
+    height: 65vh;
+  }
+}
