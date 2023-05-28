@@ -1,44 +1,44 @@
 [
   {
     "id": "aaf6c0b2-715f-58e7-b0a3-fb6af294cddd",
-    "screenImagePath": "/res/images/app/messages-screen.png",
+    "screenImagePath": "./res/images/app/messages-screen.png",
     "routes": [
       {
         "id": "bc0bc5ba-a8cd-5a5d-ae97-79f4e983242b",
-        "screenImagePath": "/res/images/app/message-bdc-screen.png",
+        "screenImagePath": "./res/images/app/message-bdc-screen.png",
         "class": "app-action message row-1"
       },
       {
         "id": "7b5ddcce-c05b-53df-ac34-a97593c3d0d8",
-        "screenImagePath": "/res/images/app/message-radio-canada-screen.png",
+        "screenImagePath": "./res/images/app/message-radio-canada-screen.png",
         "class": "app-action message row-2"
       },
       {
         "id": "fbe98f43-5f6e-562a-8cd5-7be6766cdf57",
-        "screenImagePath": "/res/images/app/message-jake-screen.png",
+        "screenImagePath": "./res/images/app/message-jake-screen.png",
         "class": "app-action message row-3"
       },
       {
         "id": "43c46b75-62b2-56a3-a3e0-502067ddf767",
-        "screenImagePath": "/res/images/app/message-jack-screen.png",
+        "screenImagePath": "./res/images/app/message-jack-screen.png",
         "class": "app-action message row-4"
       }
     ]
   },
   {
     "id": "368fd782-d2b4-558e-8ca2-596e8e52f9fd",
-    "screenImagePath": "/res/images/app/contact-screen.png"
+    "screenImagePath": "./res/images/app/contact-screen.png"
   },
   {
     "id": "9d1e9147-1db7-515a-8b0f-98d3f96f5b89",
-    "screenImagePath": "/res/images/app/test.png"
+    "screenImagePath": "./res/images/app/test.png"
   },
   {
     "id": "22c58d58-1df1-583b-a448-3f5c6bd5a6af",
-    "screenImagePath": "/res/images/app/test.png"
+    "screenImagePath": "./res/images/app/test.png"
   },
   {
     "id": "a1a040ec-6e27-5f2a-86cc-ef1b4cc77305",
-    "screenImagePath": "/res/images/app/test.png"
+    "screenImagePath": "./res/images/app/test.png"
   }
 ]

@@ -3,22 +3,48 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>CEOS development</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./res/fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./res/fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./res/fav/favicon-16x16.png"
+    />
+
+    <link rel="manifest" href="site.webmanifest" />
     <link
       href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"
       rel="stylesheet"
     />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script
       src="https://kit.fontawesome.com/d3feeb6e79.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="header-section">
@@ -41,11 +67,17 @@
     </div>
     <div class="mission-card">
       <img src="res/images/square-logo-color-no-background.svg" alt="" />
-      <h1>
-        At CEOS Development, our mission is to provide beautiful, efficient, and
-        professional mobile development services that solve real-world problems
-        with elegant algorithms.
-      </h1>
+      <div>
+        <h1>
+          Résoudre vos problèmes à l'aide de solutions numériques sur mesure.
+        </h1>
+
+        <span class="mission">
+          En tant que partenaires dans le développement de vos projets, notre
+          mission est de créer des solutions numériques parfaitement alignées
+          sur votre réalité.
+        </span>
+      </div>
     </div>
 
     <div class="section-mission"></div>
@@ -54,23 +86,23 @@
         <div class="mock-container">
           <div
             id="dbbabc6d-a3db-512b-aa0b-82dc5deaddca"
-            class="app-icon row-1 col-1"
+            class="app-icon row-1 col-1 indicator"
           ></div>
           <div
             id="dfe669f6-6586-57b8-b411-a60838a16262"
-            class="app-icon row-1 col-2"
+            class="app-icon row-1 col-2 indicator"
           ></div>
           <div
             id="ff15edd9-4e21-5692-bd36-024356520e40"
-            class="app-icon row-1 col-3"
+            class="app-icon row-1 col-3 indicator"
           ></div>
           <div
             id="6746a768-4896-54d8-913f-2296193a87b6"
-            class="app-icon row-1 col-4"
+            class="app-icon row-1 col-4 indicator"
           ></div>
           <div
             id="8e312754-e6a8-50fa-84d5-5990f27f2883"
-            class="app-icon row-1 col-5"
+            class="app-icon row-1 col-5 indicator"
           ></div>
           <div
             id="aaf6c0b2-715f-58e7-b0a3-fb6af294cddd"
@@ -115,21 +147,39 @@
       <img src="res/images/contact-us.jpg" alt="contact us" />
 
       <div class="contact-us-form">
-        <form action="form-process.php" method="POST" class="formcarry-form">
-          <label for="name">Your Name</label>
+        <form class="formcarry-form" method="post">
+          <div class="form-title">
+            <span>Vous avez un problème, nous avons la solution.</span>
+            <h3>Venez discutez</h3>
+          </div>
+
+          <label for="name" class="required">Votre nom</label>
           <input type="text" id="name" name="fullName" required />
 
-          <label for="email">Your Email Address</label>
+          <label for="email" class="required">Votre adresse courriel</label>
           <input type="email" id="email" name="email" required />
 
-          <label for="message">Your Message</label>
+          <label for="message">Message</label>
           <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
           <button type="submit">Send</button>
+          <div class="contact">
+            <div>
+              <i class="fa fa-envelope"></i>
+              <span class="nav-text"
+                >jean.christophe.decary.ceos@gmail.com</span
+              >
+            </div>
+            <div>
+              <i class="fa fa-phone"></i>
+              <span class="nav-text">(438) 873-8873</span>
+            </div>
+          </div>
         </form>
       </div>
     </div>
     <script src="banner-canvas.js"></script>
     <script src="mobile-phone-porfolio.js"></script>
+    <script src="contact-us-form.js"></script>
   </body>
 </html>

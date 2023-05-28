@@ -2,36 +2,47 @@
   {
     "id": "dbbabc6d-a3db-512b-aa0b-82dc5deaddca",
     "title": "Metro mon épicier",
-    "landingImagePath": "/res/images/app/metro-screen.png",
+    "landingImagePath": "./res/images/app/metro-screen.png",
     "objectif": "La tâche consistait à développer une application qui pourrait connecter un grand nombre d'utilisateurs, même ceux qui ne sont pas familiers avec les applications mobiles, et garantir une expérience utilisateur satisfaisante. L'objectif était de fournir une valeur ajoutée significative aux utilisateurs pour les encourager à utiliser l'application sur une base quotidienne. Dans ce contexte, l'interface utilisateur (UI) et l'expérience utilisateur (UX) ont joué un rôle crucial dans le projet.",
-    "tags": ["leader", "disappear", "saved"]
+    "tags": [
+      "Carte",
+      "Notifications",
+      "Lecture code barre",
+      "Connexion à des API",
+      "Liste d'épicerie"
+    ]
   },
   {
     "id": "dfe669f6-6586-57b8-b411-a60838a16262",
     "title": "Super C",
-    "landingImagePath": "/res/images/app/super-c-screen.png",
+    "landingImagePath": "./res/images/app/super-c-screen.png",
     "objectif": "L'objectif donné était de concevoir une application capable de connecter des milliers d'utilisateurs qui ne sont pas familiers avec les applications mobiles, tout en veillant à ce qu'ils bénéficient d'une expérience agréable. Il était important que les utilisateurs trouvent une valeur ajoutée significative à l'utilisation de l'application pour pouvoir l'adopter dans leur routine quotidienne. L'aspect de l'interface utilisateur et de l'expérience utilisateur a été un élément crucial du projet.",
-    "tags": ["leader", "disappear", "saved", "sum"]
+    "tags": ["Notification", "Circulaire", "Liste d'épicerie", "Compte"]
   },
   {
     "id": "ff15edd9-4e21-5692-bd36-024356520e40",
     "title": "Ici TOU.TV",
-    "landingImagePath": "/res/images/app/toutv-screen.png",
-    "objectif": "Id tempor est et esse ipsum irure ea exercitation qui culpa quis proident enim ex. Labore nostrud enim excepteur consectetur duis amet consectetur incididunt. Est aliquip laboris eu id amet Lorem dolor nisi.",
-    "tags": ["cookies", "manufacturing", "saw"]
+    "landingImagePath": "./res/images/app/toutv-screen.png",
+    "objectif": "Offrir une plateforme de divertissement. ICI TOU.TV regroupe une foule de contenus francophones, dont plusieurs émissions et séries de disponibles partout au Canada et sur l'appareil de votre choix (sur les téléviseurs connectés, les appareils mobiles ou sur le Web ). À l'aide de votre compte authentifié, l'utilisateur peux reprendre le visionnage là où il l'a laissé et regrouper son contenus favoris pour les retrouver rapidement.",
+    "tags": ["Streaming", "Authentification", "Gestion des favoris"]
   },
   {
     "id": "6746a768-4896-54d8-913f-2296193a87b6",
     "title": "BDC Mobile",
-    "landingImagePath": "/res/images/app/bdc-screen.png",
+    "landingImagePath": "./res/images/app/bdc-screen.png",
     "objectif": "La Banque de développement du canada (BDC) est en recherche constante de solutions innovantes permettant d'augmenter l’efficacité des services qu’elle offre à ses clients. C’est dans cette optique que la BDC s’est associée à nventive pour concevoir une solution simplifiant le processus de demande de prêts des entrepreneurs canadiens.",
-    "tags": ["pocket", "folks", "blue", "observe"]
+    "tags": [
+      "Jetpack compose",
+      "Graphique",
+      "Gestion financière",
+      "Fils d'actualité"
+    ]
   },
   {
     "id": "8e312754-e6a8-50fa-84d5-5990f27f2883",
     "title": "Le campeur",
-    "landingImagePath": "/res/images/app/campeur-screen.png",
+    "landingImagePath": "./res/images/app/campeur-screen.png",
     "objectif": "L'application mobile Le Campeur est un outil efficace qui vous permet de localiser des campings, stations-service, commerçants de pièces et accessoires et bien plus encore. Trouvez rapidement et facilement les commerces et services offrant des avantages exclusifs aux membres de la FQCC. Connecté ou hors-ligne, vous aurez accès à toutes les fonctionnalités où que vous soyez durant vos déplacements.",
-    "tags": ["interest"]
+    "tags": ["Hors ligne", "Carte", "Partage de position"]
   }
 ]

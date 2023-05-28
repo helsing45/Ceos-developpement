@@ -2,6 +2,7 @@
   --primary-color: #2d4059;
   --primary-color-variant: #5a7497;
   --primary-color-63: #2d4059a1;
+  --primary-color-variant-63: #5a7497a1;
   --on-primary: #fff;
   --on-primary-63: #ffffffa1;
   --secondary-color: #ffd460;
@@ -68,7 +69,7 @@ body {
 /* MISSION SECTION */
 
 .section-mission {
-  height: 35vh;
+  height: 300px;
   width: 100%;
   background-color: var(--secondary-color);
 }
@@ -85,7 +86,7 @@ body {
   position: absolute;
   background-color: var(--surface);
   padding: 18px;
-  width: 60vw;
+  width: min(960px, 60vw);
   border-radius: 7px;
   display: flex;
   gap: 22px;
@@ -110,9 +111,13 @@ body {
   border-radius: 50%;
 }
 
+.mission {
+  font-size: 20px;
+}
+
 /* PORFOLIO SECTION */
 .section-porfolio {
-  height: 90vh;
+  height: max(750px, 90vh);
   width: 100%;
   background-color: var(--primary-color);
   position: relative;
@@ -153,6 +158,23 @@ body {
   height: 12%;
   position: absolute;
   z-index: 2;
+}
+
+.indicator {
+  border-radius: 5px;
+  animation: pulse 3s infinite;
+
+  background-color: rgba(233, 233, 233, 0.6);
+  box-shadow: 0 0 0 0 rgba(233, 233, 233, 1);
+  scale: (1);
+}
+
+@keyframes pulse {
+  80% {
+    transform: scale(0.95);
+    background-color: rgba(233, 233, 233, 0);
+    box-shadow: 0 0 0 0 rgba(233, 233, 233 0);
+  }
 }
 
 .project-detail {
@@ -310,6 +332,7 @@ body {
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
+  color: var(--primary-color);
 }
 
 .formcarry-form input,
@@ -344,7 +367,7 @@ body {
   padding: 12px 20px;
   border-radius: 8px;
   border-color: transparent;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-variant);
   color: var(--on-primary);
   font-weight: 700;
   font-size: 18px;
@@ -353,7 +376,7 @@ body {
 }
 
 .formcarry-form button:hover {
-  background-color: var(--primary-color-63);
+  background-color: var(--primary-color-variant-63);
 }
 
 .formcarry-alert {
@@ -376,6 +399,47 @@ body {
 
 .formcarry-alert.error {
   background: #de524c;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+}
+
+.contact {
+  padding: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 25px;
+  color: var(--primary-color);
+}
+
+.nav-text {
+  vertical-align: middle;
+  padding-bottom: 18px;
+}
+
+.form-title {
+  display: flex;
+  text-align: unset;
+}
+.form-title h3 {
+  font-size: 30px;
+  border-left: 5px solid var(--primary-color-variant);
+  color: var(--primary-color-variant);
+  padding-left: 10px;
+}
+
+.form-title span {
+  padding-top: 29px;
+  padding-right: 31px;
+  font-size: 26px;
+  color: var(--primary-color);
 }
 
 @media screen and (min-width: 2000px) {
@@ -418,7 +482,7 @@ body {
     font-size: 2em;
   }
   .section-porfolio {
-    height: 140vh;
+    height: 1625px;
   }
   .app-action.message {
     width: 88%;
@@ -525,6 +589,10 @@ body {
 }
 
 @media screen and (max-width: 790px) {
+  .section-mission {
+    height: 28vh;
+  }
+
   .header-section {
     background-color: cadetblue;
     aspect-ratio: 1;
@@ -546,13 +614,29 @@ body {
     border-radius: 7px;
     display: flex;
     flex-direction: column;
-    top: 40vh;
+    top: 50vh;
     width: 85%;
+  }
+
+  .mission-card img {
+    margin: auto;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
+  .mission-card {
+    top: 40vh;
+  }
   .section-mission {
-    height: 65vh;
+    height: 28vh;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .mission-card {
+    top: 39vh;
+  }
+  .section-mission {
+    height: 50vh;
   }
 }
