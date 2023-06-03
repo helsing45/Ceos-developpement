@@ -10,7 +10,6 @@ $.getJSON("assets/porfolio/easter-eggs.json", function (data) {
 $(".app-icon").on('click', function (event) {
     event.stopPropagation();
     event.stopImmediatePropagation();
-    //(... rest of your JS code)
     const project = projects.find(element => element.id == event.target.id);
     if (project != null) {
         displayProject(project);

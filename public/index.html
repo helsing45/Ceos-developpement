@@ -6,8 +6,6 @@
     <title>CEOS development</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,8 +25,10 @@
     />
 
     <link rel="manifest" href="site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Pacifico&display=swap"
       rel="stylesheet"
     />
 
@@ -47,7 +47,21 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+      <div class="closes-modal">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <img src="./res/images/thank_you.jpg" alt="" />
+      <h1>Merci!</h1>
+      <p>Merci de nous avoir contacté. Nous vous contacterons très bientôt.</p>
+    </div>
     <div class="header-section">
+      <div class="header-mobile">
+        <div class="header-gradient pulsing"></div>
+        <img class="header-gradient" src="./res/images/mobile_header.png" />
+      </div>
       <img
         class="header-logo"
         src="res/images/company_name_no_background.svg"
@@ -63,6 +77,7 @@
         id="canvas-right"
         width="300"
       ></canvas>
+
       <div class="right-filler"></div>
     </div>
     <div class="mission-card">
